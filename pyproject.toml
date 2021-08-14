@@ -12,9 +12,11 @@ build = "cp38-*"
 
 # Ensure recent versions of CMake and Ninja are installed
 before-all = [
-    "pipx install cmake==3.21.0",
+    "cmake --version || true",
+    "pipx install -f cmake==3.21.1.post1",
     "cmake --version",
-    "pipx install ninja==1.10.0.post3",
+    "ninja --version || true",
+    "pipx install -f ninja==1.10.2",
     "ninja --version",
 ]
 
