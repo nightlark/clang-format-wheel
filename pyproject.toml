@@ -45,8 +45,6 @@ logging.level = "DEBUG"
 [tool.cibuildwheel]
 # Super-verbose output for debugging purpose
 build-verbosity = 3
-# Set CMAKE_GENERATOR env var which is respected by scikit-build-core to use Ninja on all platforms
-environment = "CMAKE_GENERATOR=Ninja"
 
 # Testing commands for our wheels
 before-test = [
